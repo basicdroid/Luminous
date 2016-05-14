@@ -10,8 +10,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.training.android.luminous.MainActivity">
 
-    <TextView
+    <ImageView
+        android:id="@+id/imgLights"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/lights_off"/>
+
+    <ToggleButton
+        android:id="@+id/btnSwitch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:layout_below="@+id/imgLights"
+        android:layout_centerHorizontal="true"
+        android:text="New ToggleButton"/>
 </RelativeLayout>
